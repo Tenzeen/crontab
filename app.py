@@ -6,7 +6,8 @@ import requests
 import crontab
 
 # load in dataset
-data = pd.read_csv('https://data.cdc.gov/api/views/9mfq-cb36/rows.csv')
+data = pd.read_json('https://healthdata.gov/resource/g62h-syeh.json')
+data
 
 # get current working directory
 cwd = os.getcwd()
@@ -21,5 +22,5 @@ now = time.time()
 nowStr = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
 
 # create a new file in the current working directory
-with open(cwd + 'app_' + nowStr + '.txt', 'w') as f:
+with open(cwd + '/home/tenzin_tsegyal/crontab/app_' + nowStr + '.txt', 'w') as f:
     f.write(str(data))
