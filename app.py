@@ -22,6 +22,7 @@ now = time.time()
 
 # save current time as a string
 nowStr = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
+print('Current Time: ', nowStr)
 
 # create a new file in the current working directory
 with open(cwd + '/home/tenzin_tsegyal/crontab/app_' + nowStr + '.txt', 'w') as f:
