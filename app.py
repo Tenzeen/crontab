@@ -7,7 +7,9 @@ import crontab
 
 # load in dataset
 data = pd.read_json('https://healthdata.gov/resource/g62h-syeh.json')
-data
+
+# save it as a csv file
+data.to_csv('csv/healthdata', index = None)
 
 # get current working directory
 cwd = os.getcwd()
