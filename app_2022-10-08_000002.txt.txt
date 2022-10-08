@@ -1,0 +1,16 @@
+  GNU nano 2.9.3                                     app_2022-10-08_00:00:02.txt                                                
+
+    state  ... previous_day_admission_pediatric_covid_confirmed_5_11
+0      AR  ...                                                NaN
+1      NE  ...                                                NaN
+2      NV  ...                                                NaN
+3      RI  ...                                                NaN
+4      MA  ...                                                NaN
+..    ...  ...                                                ...
+995    PR  ...                                                NaN
+996    IN  ...                                                NaN
+997    WI  ...                                                NaN
+998    KS  ...                                                NaN
+999    WV  ...                                                NaN
+
+[1000 rows x 134 columns]
