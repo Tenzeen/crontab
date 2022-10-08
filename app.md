@@ -1,18 +1,21 @@
 
-Schedule in crontab format
+# ***Schedule in crontab format***
 
-Every day at midnight:
+## **Every day at midnight:**
+
 0 0 * * * /usr/bin/python3 /home/tenzin_tsegyal/crontab/app.py > log.txt 2>&1 &
 
-Every Sunday at 10:00pm
+## **Every Sunday at 10:00pm**
+
 0 22 * * SUN /usr/bin/python3 /home/tenzin_tsegyal/crontab/app.py > log.txt 2>&1 &
 
 
-At 8:00am on the 25th in every 3rd month 
+## At 8:00am on the 25th in every 3rd month 
+
 0 8 25 */3 * /usr/bin/python3 /home/tenzin_tsegyal/crontab/app.py > log.txt 2>&1 &
 
 
-Steps:
+# ***Steps:***
 
 1) Deploy VM (deployed on GCP since I ran out of Azure credits)
 
